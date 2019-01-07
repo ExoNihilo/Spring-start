@@ -6,13 +6,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- Bean of the dependency -->
-    <bean id="outfitRed" class="fr.wildcodeschool.thewizardproject.models.OutfitRed">
-    </bean>
-    
-    <!-- We will define our beans here : -->
-    <bean id="dumbledoreId" class="fr.wildcodeschool.thewizardproject.models.Dumbledore">
-    	<constructor-arg ref="outfitRed"/>
-    </bean>
+	    <context:component-scan base-package="fr.wildcodeschool.thewizardproject.models">
+    	</context:component-scan>
 
 </beans>

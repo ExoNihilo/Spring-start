@@ -1,5 +1,6 @@
 package fr.wildcodeschool.thewizardproject.models;
 
+
 public class Gandalf implements WizardInterface {
 	
 	private OutfitInterface myOutfit;
